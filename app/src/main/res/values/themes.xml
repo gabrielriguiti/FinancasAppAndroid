@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FinancasApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+    </style>
+
+    <style name="Theme.FinancasApp" parent="Base.Theme.FinancasApp" />
+
+    <style name="FloatingActionButton" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/blue</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="Button" parent="Theme.MaterialComponents">
+        <item name="backgroundTint">@color/blue</item>
+    </style>
+</resources>
