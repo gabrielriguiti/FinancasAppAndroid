@@ -44,15 +44,15 @@ public class ParcelamentosFragment extends Fragment {
         rvParcelamentos = view.findViewById(R.id.data_list);
         rvParcelamentos.setLayoutManager(new LinearLayoutManager(getContext()));
         rvParcelamentos.setAdapter(adapter);
-
-        FloatingActionButton fabAddLanc = view.findViewById(R.id.btn_add);
-        fabAddLanc.setOnClickListener(v ->
-                requireActivity()
-                        .getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.frame_layout, new FormParcelamentoFragment())
-                        .addToBackStack(null)
-                        .commit());
+//
+//        FloatingActionButton fabAddLanc = view.findViewById(R.id.btn_add);
+//        fabAddLanc.setOnClickListener(v ->
+//                requireActivity()
+//                        .getSupportFragmentManager()
+//                        .beginTransaction()
+//                        .replace(R.id.frame_layout, new FormParcelamentoFragment())
+//                        .addToBackStack(null)
+//                        .commit());
 
         return view;
     }

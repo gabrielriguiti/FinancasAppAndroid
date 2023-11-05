@@ -44,14 +44,14 @@ public class ReceitasFragment extends Fragment {
 
         tvTotal = view.findViewById(R.id.total);
 
-        FloatingActionButton fabNovaReceita = view.findViewById(R.id.btn_add);
-        fabNovaReceita.setOnClickListener(v ->
-                requireActivity()
-                        .getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.frame_layout, new FormReceitaFragment())
-                        .addToBackStack(null)
-                        .commit());
+//        FloatingActionButton fabNovaReceita = view.findViewById(R.id.btn_add);
+//        fabNovaReceita.setOnClickListener(v ->
+//                requireActivity()
+//                        .getSupportFragmentManager()
+//                        .beginTransaction()
+//                        .replace(R.id.frame_layout, new FormReceitaFragment())
+//                        .addToBackStack(null)
+//                        .commit());
 
         return view;
     }

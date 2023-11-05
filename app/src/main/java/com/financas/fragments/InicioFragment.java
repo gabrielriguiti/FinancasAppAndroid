@@ -42,13 +42,13 @@ public class InicioFragment extends Fragment {
         rwCartoes.setLayoutManager(new LinearLayoutManager(getContext()));
         rwCartoes.setAdapter(new CartoesAdapter(requireFragmentManager(), requireContext(), cartoes));
 
-        ImageView ivBtnAddCartao = view.findViewById(R.id.btn_add_cartao);
-        ivBtnAddCartao.setOnClickListener(v -> requireActivity()
-                .getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.frame_layout, new FormCartaoFragment())
-                .addToBackStack(null)
-                .commit());
+//        ImageView ivBtnAddCartao = view.findViewById(R.id.btn_add_cartao);
+//        ivBtnAddCartao.setOnClickListener(v -> requireActivity()
+//                .getSupportFragmentManager()
+//                .beginTransaction()
+//                .replace(R.id.frame_layout, new FormCartaoFragment())
+//                .addToBackStack(null)
+//                .commit());
 
         return view;
     }

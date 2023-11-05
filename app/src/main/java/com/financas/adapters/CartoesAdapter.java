@@ -62,11 +62,11 @@ public class CartoesAdapter extends RecyclerView.Adapter<CartoesAdapter.ViewHold
         holder.tvVencimento.setText(cartao.getVencimento());
         holder.tvFatura.setText(NumberUtils.formatRealBrasileiro(cartao.getVlrFatura()));
 
-        holder.clContainer.setOnClickListener(v -> fragmentManager
-                .beginTransaction()
-                .replace(R.id.frame_layout, new FormCartaoFragment(cartao))
-                .addToBackStack(null)
-                .commit());
+//        holder.clContainer.setOnClickListener(v -> fragmentManager
+//                .beginTransaction()
+//                .replace(R.id.frame_layout, new FormCartaoFragment(cartao))
+//                .addToBackStack(null)
+//                .commit());
 
         holder.clContainer.setOnLongClickListener(v -> {
             DatabaseHelper.getInstance(context).cartaoDao().delete(cartao);

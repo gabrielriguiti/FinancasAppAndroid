@@ -41,13 +41,13 @@ public class ParcelamentosAdapter extends RecyclerView.Adapter<ParcelamentosAdap
     public void onBindViewHolder(@NonNull ParcelamentosAdapter.ViewHolder holder, int position) {
         Lancamento lancamento = dataList.get(position);
 
-        holder.container.setOnClickListener(v ->
-                activity
-                        .getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.frame_layout, new FormParcelamentoFragment(lancamento))
-                        .addToBackStack(null)
-                        .commit());
+//        holder.container.setOnClickListener(v ->
+//                activity
+//                        .getSupportFragmentManager()
+//                        .beginTransaction()
+//                        .replace(R.id.frame_layout, new FormParcelamentoFragment(lancamento))
+//                        .addToBackStack(null)
+//                        .commit());
 
         holder.descricao.setText(lancamento.getDescricao());
         holder.valor.setText(NumberUtils.formatRealBrasileiro(lancamento.getValor() / lancamento.getTotParcelas()));

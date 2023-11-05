@@ -45,13 +45,13 @@ public class LancamentoAdapter extends RecyclerView.Adapter<LancamentoAdapter.Vi
         holder.valor.setText(NumberUtils.formatRealBrasileiro(lancamento.getValor()));
         holder.diaVencimento.setText(String.format("Dia vencimento: %s", lancamento.getDiaVencimento()));
 
-        holder.clContainer.setOnClickListener(v ->
-                activity
-                        .getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.frame_layout, lancamento.getRecDesp() == -1 ? new FormDespesaFragment(lancamento) : new FormReceitaFragment(lancamento))
-                        .addToBackStack(null)
-                        .commit());
+//        holder.clContainer.setOnClickListener(v ->
+//                activity
+//                        .getSupportFragmentManager()
+//                        .beginTransaction()
+//                        .replace(R.id.frame_layout, lancamento.getRecDesp() == -1 ? new FormDespesaFragment(lancamento) : new FormReceitaFragment(lancamento))
+//                        .addToBackStack(null)
+//                        .commit());
     }
 
     @Override

@@ -45,14 +45,14 @@ public class DespesasFragment extends Fragment {
 
         tvTotal = view.findViewById(R.id.total);
 
-        FloatingActionButton fabNovaDespesa = view.findViewById(R.id.btn_add);
-        fabNovaDespesa.setOnClickListener(v ->
-                requireActivity()
-                        .getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.frame_layout, new FormDespesaFragment())
-                        .addToBackStack(null)
-                        .commit());
+//        FloatingActionButton fabNovaDespesa = view.findViewById(R.id.btn_add);
+//        fabNovaDespesa.setOnClickListener(v ->
+//                requireActivity()
+//                        .getSupportFragmentManager()
+//                        .beginTransaction()
+//                        .replace(R.id.frame_layout, new FormDespesaFragment())
+//                        .addToBackStack(null)
+//                        .commit());
 
         return view;
     }
